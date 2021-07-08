@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    font-family: 'Poppins',sans-serif;
+}
+.timeline{
+    margin: 5vw 5vw ;
+}
+.timeline__span{
+    display : flex;
+}
+.span__info{
+    width:50vw;
+    min-height: 10vh;
+    display: inline-flex; /* had a doubt , if i remove this line then my red line disappears , and i dont know why it is happening*/
+}
+.span__info--A::after{
+    content: "";
+    margin-left: auto;
+    display:inline-block;
+    width: 0.4vw;
+    background-color:red;
+}
+.span__info--B::before{
+    content:" ";
+    background-color: green;
+    transform: translate(-60%,0%);
+    height: 1.5rem;
+    display:inline-block;
+    width: 1.5rem;
+    border-radius:50%;
+}
+.text__child--B{
+    font-weight: 200;
+    font-size: 0.9rem;
+}
+.text__child--A{
+    font-weight: 600;
+    font-size: 1rem;
+}
